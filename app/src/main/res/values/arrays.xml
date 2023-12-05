@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mega_byte_array">
+        <item>Kilo Byte</item>
+        <item>Byte</item>
+        <item>Kibi Byte</item>
+        <item>Bit</item>
+    </string-array>
+</resources>

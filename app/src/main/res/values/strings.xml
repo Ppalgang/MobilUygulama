@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SchoolMobileProject</string>
+
+    <string-array name="base_array">
+        <item>Binary</item>
+        <item>Octal</item>
+        <item>Hexadecimal</item>
+    </string-array>
+    <string-array name="temperature_units">
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+</resources>

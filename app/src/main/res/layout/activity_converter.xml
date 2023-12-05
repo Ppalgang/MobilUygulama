@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/layoutConverter"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Converter"
+            android:textSize="40sp"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+
+    <!-- Decimal Bölümü -->
+    <RelativeLayout
+        android:id="@id/layoutDecimal"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layoutConverter"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/textDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decimal: "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textDecimal"
+            android:inputType="numberDecimal"/>
+
+        <Spinner
+            android:id="@+id/spinnerDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editDecimal"
+            android:layout_marginTop="1dp"
+            android:minHeight="30dp"/>
+
+        <TextView
+            android:id="@+id/textResultDecimal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerDecimal"
+            android:layout_marginTop="1dp"
+            android:text="Sonuc: "
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <!-- Byte Dönüşümü -->
+    <RelativeLayout
+        android:id="@id/layourMegaByte"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layoutDecimal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/textMegaByte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mega Byte: "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editMegaByte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textMegaByte"
+            android:inputType="numberDecimal"/>
+
+        <Spinner
+            android:id="@+id/spinnerMegaByte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editMegaByte"
+            android:layout_marginTop="1dp"
+            android:minHeight="30dp"/>
+
+        <TextView
+            android:id="@+id/textResultMegaByte"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerMegaByte"
+            android:layout_marginTop="1dp"
+            android:text="Sonuc: "
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <!-- Celcius Dönüşümü -->
+    <RelativeLayout
+        android:id="@id/layoutCelcius"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layourMegaByte"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/textCelcius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celcius: "
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editCelcius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textCelcius"
+            android:inputType="numberSigned" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTempeture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textCelcius"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioFahrenheit"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Fahrenheit"/>
+
+            <RadioButton
+                android:id="@+id/radioKelvin"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Kelvin"/>
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textResultTempeture"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sonuc: "
+            android:textSize="16sp"
+            android:layout_below="@+id/radioGroupTempeture"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
